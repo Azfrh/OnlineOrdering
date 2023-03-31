@@ -13,7 +13,7 @@
 
 <body style="background-color:hsla(0, 100%, 50%, 0.1);">
 
-    <img src="Vegan Chocolate Cake With Whipped Ganache.jpg" alt="" width="48" height="48">>
+    <img src="Vegan Chocolate Cake With Whipped Ganache.jpg" alt="" width="20" height="20">>
 
     <div class="wrapper">
         <h2>Register Account</h2>
