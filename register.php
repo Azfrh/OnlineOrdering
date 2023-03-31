@@ -55,14 +55,8 @@
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" size="20" name="customer_password" id="customer_password" placeholder="Enter password" required>
-                
             </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="text" size="20" name="fphone" id="fphone" placeholder="Enter phone number" required>
-                
-            </div>
-        
+           
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Create Account">
             </div>
