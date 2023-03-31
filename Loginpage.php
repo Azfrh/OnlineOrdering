@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; border:2px solid Black; }
         body{display:flex; flex-direction:column; justify-content:center; align-items:center;}
     </style>
 </head>
-<body style="background-color:LightGoldenRodYellow;">
+<body style="background-color:hsla(0, 100%, 50%, 0.1);">
 
-    <img src="logo-jkr.png" alt="" width="270" height="200">
+    <img src="Vegan Chocolate Cake With Whipped Ganache.jpg" alt="" width="270" height="200">
     <div class="wrapper">
     <?php if (isset($_GET['logout'])) { ?>  <br>   
                     <div class="alert alert-info text-center text-danger" style="font-size: 15px;text-align: center; "><?php echo "You have logged out"; ?></div> <?php } ?>
