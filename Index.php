@@ -26,7 +26,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 <body>
 <div class="w3-container w3-pale-red">
-<p><center><h1> MUSIC RUN </h1></center></p>
+<p><center><h1> FAEZAH HOMEMADE CAKES </h1></center></p>
 
 <p><center><img src="RUNN.png" alt="honey" style="width:50%"></center></p>
 
@@ -38,8 +38,8 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 <div class="w3-container w3-pale-red">
-  <p><center><label><b>Let's Stay Fit and Healty</b></label></center></p>
-  <p><center><label><b><p class="login-register-text">Let's come and join us! <a href="register.php">Register Here</a>.</p></b></label></center></p>
+  <p><center><label><b>Come Buy a cake online for yourself</b></label></center></p>
+  <p><center><label><b><p class="login-register-text">and send cake to your friends and family today! <a href="register.php">Register Here</a>.</p></b></label></center></p>
    </div>
 </body>
 </html>
