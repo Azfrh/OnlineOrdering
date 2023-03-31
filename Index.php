@@ -39,7 +39,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 <div class="w3-container w3-pale-red">
   <p><center><label><b>Come Buy a cake online for yourself</b></label></center></p>
-  <p><center><label><b><p class="login-register-text">and send cake to your friends and family today! <a href="register.php">Register Here</a>.</p></b></label></center></p>
+  <p><center><label><b><p class="login-register-text">Or send cake to your friends and family today! <a href="register.php">Register Here</a>.</p></b></label></center></p>
    </div>
 </body>
 </html>
