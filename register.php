@@ -11,7 +11,7 @@
     </style>
 </head>
 
-<body style="background-color:LightGoldenRodYellow;">
+<body style="background-color:hsla(0, 100%, 50%, 0.1);">
 
     <img src="jkr_logo.png" alt="" width="200" height="200">
 
