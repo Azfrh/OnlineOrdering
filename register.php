@@ -30,20 +30,31 @@
         }        
         ?>
 
-        <form action="registerprocess.php" method="post">
+        <form action="customerdataregister.php" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" id="fuser" name="fuser" size="20" placeholder="Enter username" required>
+                <label>name</label>
+                <input type="text" id="customer_id" name="customer_id" size="20" placeholder="Enter username" required>
                 
             </div>    
             <div class="form-group">
                 <label>Full Name</label>
-                <input type="text" id="fname" name="fname" size="20" placeholder="Enter full name" required>
+                <input type="text" id="customer_name" name="customer_name" size="20" placeholder="Enter full name" required>
                 
             </div>    
+
+            <div class="form-group">
+                <label>Address</Address></label>
+                <input type="text" id="customer_address" name="customer_address" size="20" placeholder="Enter full name" required>
+            </div> 
+
+            <div class="form-group">
+                <label>Phone no</label>
+                <input type="text" id="customer_phone" name="customer_phone" size="20" placeholder="Enter full name" required>
+                
+            </div> 
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" size="20" name="fpwd" id="fpwd" placeholder="Enter password" required>
+                <input type="password" size="20" name="customer_password" id="customer_password" placeholder="Enter password" required>
                 
             </div>
             <div class="form-group">
@@ -51,11 +62,7 @@
                 <input type="text" size="20" name="fphone" id="fphone" placeholder="Enter phone number" required>
                 
             </div>
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" size="20" name="femail" id="femail" placeholder="Enter email address" required>
-                  
-            </div>
+        
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Create Account">
             </div>
