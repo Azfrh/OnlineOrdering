@@ -28,7 +28,7 @@
         <form action="customerdataregister.php" method="post">
             <div class="form-group">
                 <label>customer id</label>
-                <input type="text" id="customer_id" name="customer_id" size="20" placeholder="Enter username" required>
+                <input type="text" id="customer_id" name="customer_id" size="20" placeholder="Enter customer id" required>
                 
             </div>    
             <div class="form-group">
