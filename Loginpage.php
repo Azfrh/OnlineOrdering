@@ -30,13 +30,13 @@
 
         <form action="loginprocess.php" method="post">
             <div class="form-group">
-                <label>customer_id</label>
-                <input type="text" id="fuser" name="fuser" size="20" placeholder="Enter username">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                <label>customer id</label>
+                <input type="text" id="customer_id" name="customer_id" size="20" placeholder="Enter customer id">
+                <span class="invalid-feedback"><?php echo $customerid_err; ?></span>
             </div>    
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" size="20" name="fpwd" id="fpwd" placeholder="Enter password">
+                <input type="password" size="20" name="customer_password" id="customer_password" placeholder="Enter password">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
