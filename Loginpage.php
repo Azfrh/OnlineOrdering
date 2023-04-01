@@ -30,7 +30,7 @@
 
         <form action="loginprocess.php" method="post">
             <div class="form-group">
-                <label>Username</label>
+                <label>customer_id</label>
                 <input type="text" id="fuser" name="fuser" size="20" placeholder="Enter username">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
