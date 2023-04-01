@@ -28,7 +28,7 @@ s0.parentNode.insertBefore(s1,s0);
 <div class="w3-container w3-pale-red">
 <p><center><h1> FAEZAH HOMEMADE CAKES </h1></center></p>
 
-<p><center><img src="976fa72b7728fcaf8b56a0e6826ff868.jpg" alt="honey" style="width:50%"></center></p>
+<p><center><img src="976fa72b7728fcaf8b56a0e6826ff868.jpg" alt="honey" style="width:20%"></center></p>
 
 <div class="w3-container w3-pale-red">
 
