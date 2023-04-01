@@ -5,14 +5,9 @@
     <title>Register</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-        background-image: url('img_girl.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;  
-        background-size: cover;
-        font: 14px verdana; } 
-        display:flex; flex-direction:column; justify-content:center; align-items:center;
-        .wrapper{ width: 360px; padding: 20px; border:2px solid Black; } 
+        body{font: 14px verdana; } 
+        body{display:flex; flex-direction:column; justify-content:center; align-items:center;}
+        .wrapper{ width: 360px; padding: 20px; border:2px solid Black; }   
 
     </style>
 </head>
