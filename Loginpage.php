@@ -26,7 +26,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     } 
     else{ 
  
-        $sql = "SELECT * FROM manager WHERE manager_email='$uname' AND manager_password='$pass'"; 
+        $sql = "SELECT * FROM customer WHERE customer_email='$uname' AND customer_password='$pass'"; 
  
         $result = mysqli_query($conn, $sql); 
  
