@@ -37,19 +37,19 @@ else //customer id tak wujud
 $result = $sql->get_result();
 if($row = $result->fetch_assoc())    //user found
 {
-  if($customer_password=='Abu12')
+  if($employee_password=='')
   {
-    $_SESSION['customer_id'] = session_id();
-    $_SESSION['customer_password'] = $fusername;
-    header('Location: customerdataregister.php');         //customer
+    $_SESSION['employee_id'] = session_id();
+    $_SESSION['employee_password'] = $fusername;
+    header('Location: employeedataregister.php');         //employee
   }
   else
   {
-    $pass= password_verify($fpwd, $row['us_pass']);
+    $pass= password_verify($fpwd, $row['customer_password']);
     if($pass)
     {
       $_SESSION['customer_id'] = session_id();
-      $_SESSION['fusername'] = $fusername;
+      $_SESSION['customer_password'] = $customer_password;
       header('Location: customerdataregister.php');         //customer
     }
     else
