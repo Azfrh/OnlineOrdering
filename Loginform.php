@@ -5,7 +5,7 @@
 
   <div class="container">
     <label for="Customer_id"><b></b></label>
-    <input type="text" placeholder="Enter Customer_id" id="customer_id" required>
+    <input type="text" placeholder="Enter Customer id" id="customer_id" required>
 
     <label for="customer_password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="customer_password" required>
