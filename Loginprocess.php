@@ -19,7 +19,7 @@ if($count1 > 0) //customer id wujud
     {
         $_SESSION['fuser'] = session_id();
         $_SESSION['fuser'] = $fuser;
-        header('Location: homepage.php'); //page lepas login
+        header('Location: Menupage.php'); //page lepas login
 
     }
     else
