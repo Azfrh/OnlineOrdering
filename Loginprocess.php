@@ -41,7 +41,7 @@ if($row = $result->fetch_assoc())    //user found
   {
     $_SESSION['customer_id'] = session_id();
     $_SESSION['customer_password'] = $fusername;
-    header('Location: customerdataregister.php');         //admin
+    header('Location: customerdataregister.php');         //customer
   }
   else
   {
