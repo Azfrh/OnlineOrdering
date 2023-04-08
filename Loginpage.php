@@ -1,49 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; border:2px solid Black; }
-        body{display:flex; flex-direction:column; justify-content:center; align-items:center;}
-    </style>
-</head>
-<body style="background-color:hsla(0, 100%, 50%, 0.1);">
-
-    <img src="Vegan Chocolate Cake With Whipped Ganache.jpg" alt="" width="270" height="200">
-    <div class="wrapper">
-    <?php if (isset($_GET['logout'])) { ?>  <br>   
-                    <div class="alert alert-info text-center text-danger" style="font-size: 15px;text-align: center; "><?php echo "You have logged out"; ?></div> <?php } ?>
-        <h2>Login</h2>
-        <?php if (isset($_GET['takde'])) { ?>  <br>   
-                    <div class="alert alert-info text-center text-danger" style="font-size: 15px;text-align: center; "><?php echo "You have not registered"; ?></div> <?php } ?>
-    
-        <p>Please fill in your credentials to login.</p>
-
-        <?php 
-        if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
-        }        
-        ?>
-
-        <form action="Loginprocess.php" method="post">
-            <div class="form-group">
-                <label>customer id</label>
-                <input type="text" id="customer_id" name="customer_id" size="20" placeholder="Enter customer id">
-                <span class="invalid-feedback"><?php echo $customerid_err; ?></span>
-            </div>    
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" size="20" name="customer_password" id="customer_password" placeholder="Enter password">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>
-</body>
-</html>
+<?php  
+ 
+session_start();  
+ 
+include "config.php"; 
+ 
+if (isset($_POST['uname']) && isset($_POST['password'])) { 
+ 
+    function validate($data){ 
+       $data = trim($data); 
+       $data = stripslashes($data); 
+       $data = htmlspecialchars($data); 
+       return $data; 
+    } 
+ 
+    $uname = validate($_POST['uname']); 
+    $pass = validate($_POST['password']); 
+ 
+    if (empty($uname)) { 
+        header("Location: index.php?error=Email is required"); 
+        exit(); 
+    } 
+    else if(empty($pass)){ 
+        header("Location: index.php?error=Password is required"); 
+        exit(); 
+    } 
+    else{ 
+ 
+        $sql = "SELECT * FROM manager WHERE manager_email='$uname' AND manager_password='$pass'"; 
+ 
+        $result = mysqli_query($conn, $sql); 
+ 
+        if (mysqli_num_rows($result) === 1) { 
+            $row = mysqli_fetch_assoc($result); 
+            if ($row['manager_email'] === $uname && $row['manager_password'] === $pass) { 
+                echo "Logged in!"; 
+                $_SESSION['manager_email'] = $row['manager_email']; 
+                $_SESSION['manager_password'] = $row['manager_password']; 
+                $_SESSION['manager_name'] = $row['manager_name']; 
+                $_SESSION['manager_id'] = $row['manager_id']; 
+                header("Location: home.php"); 
+                exit(); 
+ 
+            } 
+            else{ 
+                header("Location: index.php?error=Incorect Email or Password"); 
+                exit(); 
+            } 
+ 
+        }else{ 
+            header("Location: index.php?error=Incorect Email or Password"); 
+            exit(); 
+        } 
+    } 
+ 
+}else{ 
+    header("Location: index.php"); 
+    exit(); 
+} 
+ 
+?>
