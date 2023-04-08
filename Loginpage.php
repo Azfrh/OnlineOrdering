@@ -48,13 +48,13 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             } 
  
         }else{ 
-            header("Location: index.php?error=Incorect Email or Password"); 
+            header("Location: Loginform.php?error=Incorect Email or Password"); 
             exit(); 
         } 
     } 
  
 }else{ 
-    header("Location: index.php"); 
+    header("Location: Loginform.php"); 
     exit(); 
 } 
  
